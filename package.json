@@ -1,0 +1,21 @@
+{
+  "name": "weather-forecast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Alexeenkova Tatyana",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jshint": "^1.9.0",
+    "gulp-shell": "^0.5.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5",
+    "jshint-stylish": "^0.1.3"
+  }
+}

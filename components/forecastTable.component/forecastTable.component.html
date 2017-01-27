@@ -1,0 +1,48 @@
+<section class="ForecastTable">
+    <h3>7 days weather forecast in {{$ctrl.data.city.name}}, {{$ctrl.data.city.country}}</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Summary</th>
+            <th>Temperature ({{$ctrl.data.units.units}})</th>
+            <th>Pressure (hpa)</th>
+            <th>Humidity (%)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in $ctrl.data.list track by $index" class="card">
+
+            <td>
+                <div class="day">{{$ctrl.getDay(item)}} </div>
+                <span class="date">{{item.dt * 1000 | date:'dd.MM'}} </span>
+                <i ng-if="$ctrl.isToday(item.dt * 1000)"> - today</i>
+
+            </td>
+
+            <td>
+                <div class="summary">
+                    <div class="summary-img"><img ng-src="http://openweathermap.org/img/w/{{item.weather[0].icon}}.png"/>
+                    </div>
+                    <div class="summary-info">
+                        <div><i>{{item.weather[0].description}}</i></div>
+                        <div>wind <i>{{item.speed}} m/s</i></div>
+                        <div>clouds <i>{{item.clouds}} %</i></div>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div>min: <i>{{item.temp.min}} {{$ctrl.data.units.char}}</i></div>
+                <div>max: <i>{{item.temp.max}} {{$ctrl.data.units.char}}</i></div>
+            </td>
+
+            <td>{{item.pressure}}</td>
+
+            <td>{{item.humidity}}</td>
+        </tr>
+
+        </tbody>
+
+    </table>
+</section>

@@ -1,0 +1,12 @@
+<section class="ControlPanel">
+    <form name="form">
+        <h3>Forecast in your city</h3>
+        <label>City: <input type="text" name="city" ng-model="$ctrl.city" ng-required="true"
+                            placeholder=" Enter city (e.g: Krakow)  "/></label>
+        <label>Units: <select ng-options="format.units for format in $ctrl.unitsFormat"
+                              ng-model="$ctrl.selectedUnit"></select></label>
+        <button ng-disabled="form.city.$error.required" ng-click="$ctrl.showForecast($ctrl.city, $ctrl.selectedUnit)">
+            Show forecast
+        </button>
+    </form>
+</section>

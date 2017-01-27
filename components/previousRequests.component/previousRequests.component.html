@@ -1,0 +1,6 @@
+<section class="PreviousRequests" ng-if="$ctrl.requests.length">
+    <h3 class="inline-title">Previous requests:</h3>
+    <span ng-repeat="request in $ctrl.requests track by $index">
+        <span style="cursor: pointer" ng-click="$ctrl.callback(request)">{{request}} | </span>
+    </span>
+</section>

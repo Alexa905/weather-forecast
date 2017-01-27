@@ -1,0 +1,85 @@
+
+.ControlPanel label {
+    margin-right: 20px
+}
+
+.ControlPanel button {
+    cursor: pointer;
+}
+
+.ControlPanel input {
+    width: 150px
+}
+
+.ForecastApp {
+    max-width: 950px;
+    margin: auto;
+    border: 1px solid #efefef;
+    padding: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.ForecastApp section {
+    margin-bottom: 20px;
+}
+.ForecastApp .error {
+    color:red;
+}
+
+
+
+.ForecastTable table {
+    width: 100%;
+}
+
+.ForecastTable table {
+    border-collapse: collapse;
+}
+
+.ForecastTable table tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.ForecastTable table td {
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.ForecastTable table th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.ForecastTable table td .date {
+    vertical-align: middle;
+}
+
+.ForecastTable table td .day {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.ForecastTable table td .summary {
+    display: flex;
+}
+
+.ForecastTable table td .summary-info {
+    text-align: left;
+    display: flex;
+    flex: 0.8;
+    flex-flow: column wrap;
+}
+
+.ForecastTable table td .summary-img {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.PreviousRequests .inline-title {
+    display: inline-block;
+}
+
