@@ -6,6 +6,8 @@ REST API: http://openweathermap.org/api.
 
 User is able to query by city name.
 
+DEMO: weather-forecast-7days.bitballoon.com
+
 Features:
 
 - JSONP to perform a cross domain AJAX request
@@ -19,4 +21,5 @@ Things to improve:
 - tabs: table, chart
 - routes
 - unit tests
+- loading gif
 
