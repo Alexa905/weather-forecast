@@ -6,7 +6,7 @@ REST API: http://openweathermap.org/api.
 
 User is able to query by city name.
 
-DEMO: weather-forecast-7days.bitballoon.com
+DEMO: http://weather-forecast-7days.bitballoon.com
 
 Features:
 
