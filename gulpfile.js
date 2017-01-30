@@ -21,31 +21,31 @@ gulp.task('concat', ['concatScripts', 'concatStyles']);
 gulp.task('watch', ['watch:css', 'watch:js']);
 
 gulp.task('concatScripts', [], function () {
-    gulp.src("components/**/**component.js")
+    return gulp.src("components/**/**component.js")
         .pipe(concat('bundle.js'))
         //.pipe(uglify())
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('concatStyles', [], function () {
-    gulp.src(["components/**/**component.css"])
+    return gulp.src(["components/**/**component.less"])
         .pipe(concat('styles.css'))
         //.pipe(cssmin())
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('lint', function () {
-    gulp.src(paths.src)
+    return gulp.src(paths.src)
         .pipe(jshint())
         .pipe(jshint.reporter(jshintReporter));
 });
 
 gulp.task('watch:css', function () {
-    gulp.watch(paths.style.all, ['concatStyles']);
+    return gulp.watch(paths.style.all, ['concatStyles']);
 });
 
 gulp.task('watch:js', function () {
-    gulp.watch(paths.src, ['lint', 'concatScripts']);
+    return gulp.watch(paths.src, ['lint', 'concatScripts']);
 });
 
 

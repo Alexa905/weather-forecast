@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "start":"gulp default",
+    "build":"gulp concat"
   },
   "author": "Alexeenkova Tatyana",
   "license": "MIT",
