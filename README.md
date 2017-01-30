@@ -10,7 +10,7 @@ DEMO: http://weather-forecast-7days.bitballoon.com
 
 Features:
 
-- JSONP to perform a cross domain AJAX request
+- Es6 transpiling with babel
 - Displays the forecast in a chart
 - Uses LocalStorage because the API will give an HTTP Error if user makes too many requests in a short period of time.
 
