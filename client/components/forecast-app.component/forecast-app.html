@@ -1,5 +1,5 @@
 <div class="ForecastApp">
-    <control-panel callback="$ctrl.showForecast"></control-panel>
+    <control-panel callback="$ctrl.showForecast(city, units)"></control-panel>
 
     <div class="error" ng-if="$ctrl.requestError">
         ERROR!
@@ -8,7 +8,7 @@
         <div>statusText: {{$ctrl.requestError.text}}</div>
     </div>
 
-    <previous-requests requests="$ctrl.previousRequests" callback="$ctrl.showForecast"></previous-requests>
+    <previous-requests requests="$ctrl.previousRequests" callback="$ctrl.showForecast(city)"></previous-requests>
 
     <forecast-table ng-if="$ctrl.data" data="$ctrl.data"></forecast-table>
 

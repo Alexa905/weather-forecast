@@ -1,0 +1,42 @@
+
+.ForecastTable {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    td {
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+      .date {
+        vertical-align: middle;
+      }
+      .day {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .summary {
+        display: flex;
+      }
+      .summary-info {
+        text-align: left;
+        display: flex;
+        flex: 0.8;
+        flex-flow: column wrap;
+      }
+      .summary-img {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+    th {
+      padding: 10px;
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+}

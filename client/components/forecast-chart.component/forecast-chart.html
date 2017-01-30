@@ -1,0 +1,7 @@
+<section class="ForecastChart">
+  <h3>Weekly weather chart (daily nad nightly temperature {{$ctrl.data.units.char}})</h3>
+  <canvas id="line" class="chart chart-line" chart-data="$ctrl.chart.data"
+          chart-labels="$ctrl.chart.labels" chart-series="$ctrl.chart.series" chart-options="$ctrl.chart.options"
+          chart-dataset-override="$ctrl.chart.datasetOverride" chart-click="$ctrl.chart.onClick">
+  </canvas>
+</section>

@@ -1,0 +1,15 @@
+.ForecastApp {
+  max-width: 950px;
+  margin: auto;
+  border: 1px solid #efefef;
+  padding: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  section {
+    margin-bottom: 20px;
+  }
+  .error {
+    color: red;
+  }
+}
+
